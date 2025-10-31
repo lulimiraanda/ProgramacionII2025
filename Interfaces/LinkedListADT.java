@@ -1,12 +1,14 @@
 package Interfaces;
 
+import Modelo.Plato;
+
 public interface LinkedListADT {
 
     /**
      * Descripcion: Agrega el elemento al final de la lista.
      * Precondición: No tiene
      */
-    void add(int value);
+    void add(int idPlato);
 
     /**
      * Descripcion: Agrega el elemento en un indice.
