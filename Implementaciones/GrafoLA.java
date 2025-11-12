@@ -65,7 +65,7 @@ public class GrafoLA implements GrafoADT {
     public void addEdge(int vertxOne, int vertxTwo, int weight) {
         VertexNode n1 = vertexToNode(vertxOne);
         VertexNode n2 = vertexToNode(vertxTwo);
-        if (n1 == null || n2 == null) return; // preconditions not met
+        if (n1 == null || n2 == null) return; 
         EdgeNode nuevo = new EdgeNode();
         nuevo.weight = weight;
         nuevo.dest = n2;
@@ -84,14 +84,14 @@ public class GrafoLA implements GrafoADT {
     public int edgeWeight(int vertxOne, int vertxTwo) {
         VertexNode nodo = vertexToNode(vertxOne);
         if (nodo == null) {
-            throw new IllegalStateException("Vertex not found");
+            throw new IllegalStateException("Vertice no encontrado");
         }
         EdgeNode aux = nodo.edge;
         while (aux != null && aux.dest.vertex != vertxTwo) {
             aux = aux.next;
         }
         if (aux == null) {
-            throw new IllegalStateException("Edge not found");
+            throw new IllegalStateException("Arista no encontrada");
         }
         return aux.weight;
     }

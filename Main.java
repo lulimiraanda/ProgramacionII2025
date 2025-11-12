@@ -3,7 +3,7 @@ import Util.Menu;
 
 public class Main {
     public static void main(String[] args) {
-        Menu menu = new Menu();
-        menu.print();
+        Menu menuPrincipal = new Menu();
+        menuPrincipal.mostrar();
     }
 }

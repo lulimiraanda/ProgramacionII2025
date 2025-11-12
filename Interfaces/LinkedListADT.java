@@ -1,7 +1,5 @@
 package Interfaces;
 
-import Modelo.Plato;
-
 public interface LinkedListADT {
 
     /**

@@ -21,6 +21,16 @@ public class Pedido {
     public void agregarPlatoID(int idPlato) {
         this.platosIDs.add(idPlato);
     }
+
+    public int platosPendientes() {
+        return this.platosIDs.size();
+    }
+
+    public void cocinarUnPlato() {
+        if (!this.platosIDs.isEmpty()) {
+            this.platosIDs.remove(0);
+        }
+    }
     
     public int getId() {
         return id;
